@@ -1,0 +1,35 @@
+{
+  "name": "tactstratfever",
+  "version": "1.0.0",
+  "description": "Fun tactical game made with Phaser3",
+  "main": "index.js",
+  "dependencies": {
+    "phaser": "^3.54.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^8.1.1",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.34.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "start": "webpack serve --mode development --entry ./src/game.js",
+    "build": "webpack --mode production --entry ./src/game.js --output ./dist/game.js",
+    "dev": "webpack --mode development --entry ./src/game.js --output ./dist/game.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-usher/tactstratfever.git"
+  },
+  "author": "Cody Usher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/c-usher/tactstratfever/issues"
+  },
+  "homepage": "https://github.com/c-usher/tactstratfever#readme"
+}
