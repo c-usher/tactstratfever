@@ -4,6 +4,7 @@
   "description": "Fun tactical game made with Phaser3",
   "main": "index.js",
   "dependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "phaser": "^3.54.0"
   },
   "devDependencies": {

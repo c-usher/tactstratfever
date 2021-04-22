@@ -1,19 +1,21 @@
-import Phaser, { Game } from "phaser";
-
-const canvas = document.getElementById("game-canvas");
+import Phaser from "phaser";
 const config = {
-  type: Phaser.WEB_GL,
-  width: 400,
-  height: 300,
-  canvas,
+  width: 1280,
+  height: 720,
+  type: Phaser.AUTO,
   physics: {
     default: "arcade",
     arcade: {
-      gravity: { y: 400 },
-      debug: true,
+      debug: false,
     },
   },
+  scale: {
+    mode: Phaser.DOM.FIT,
+    autoCenter: Phaser.DOM.CENTER_BOTH,
+    parent: "game-canvas",
+  },
+  pixelArt: true, //Stops Phaser from trying to smooth out the images
   scene: [],
 };
 
-const game = new Game(config);
+new Phaser.Game(config);
